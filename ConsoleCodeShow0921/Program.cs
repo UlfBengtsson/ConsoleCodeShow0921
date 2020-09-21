@@ -11,11 +11,27 @@ namespace ConsoleCodeShow0921
         */
         static void Main(string[] args)
         {
+            
+
+
+
+        }// end main
+
+        static string GetRandomWord()
+        {
+            string[] wordArray = { "Cat", "Dog", "Pump", "coding" };
+
+            Random random = new Random();
+
+            return wordArray[random.Next(wordArray.Length)]; // 0-2
+        }
+
+        static void ExStringBuilder()
+        {
             StringBuilder stringBuilder = new StringBuilder();
 
             Console.WriteLine("Check: " + CheckForLetter(stringBuilder, 'd'));
-
-        }// end main
+        }
 
         static bool CheckForLetter(StringBuilder stringBuilder, char letter)
         {
