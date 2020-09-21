@@ -8,12 +8,22 @@ namespace ConsoleCodeShow0921
 
         /*
 
+            MVC - Design patten
+            Model - Store data 
+            View - Display data
+            Control - Controlls the flow
+
         */
         static void Main(string[] args)
         {
-            
+            string texts = "asd asdasd asdasdasd asdasdasd";
 
+            string[] textArray = texts.Split(' ');
 
+            foreach (var item in textArray)
+            {
+                Console.WriteLine(item);
+            }
 
         }// end main
 
